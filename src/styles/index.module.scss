@@ -1,0 +1,11 @@
+@mixin mobile {
+  @media screen and (max-width: 568px) {
+    @content;
+  }
+}
+
+.modal__box {
+  @include mobile {
+    width: 100% !important;
+  }
+}
